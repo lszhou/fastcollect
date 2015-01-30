@@ -1,0 +1,6 @@
+"fastCollect" is an android-based quiz-like research data collection application. 
+You could customize all survey questions and feed the data to .txt file located 
+in SD card.
+
+This is my first android app project and many details, like UI, IO, etc need to 
+be optimized.  
