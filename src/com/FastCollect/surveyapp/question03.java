@@ -1,11 +1,10 @@
-package com.example.surveyapp;
+package com.FastCollect.surveyapp;
 
 import java.text.SimpleDateFormat;
 
-import com.example.service.FileService;
-import com.example.surveyapp.MainActivity.ButtonClickListener;
+import com.FastCollect.service.FileService;
+import com.FastCollect.surveyapp.MainActivity.ButtonClickListener;
 
-import android.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,7 +20,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class question08 extends Activity {
+public class question03 extends Activity {
 	
 	TextView textview;
 	RadioGroup radiogroup;
@@ -32,16 +31,16 @@ public class question08 extends Activity {
 	protected void onCreate (Bundle savedInstanceState){
 		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity08);
-/*		Button button2 = (Button) this.findViewById(R.id.button2);
+		setContentView(R.layout.activity03);
+		Button button2 = (Button) this.findViewById(R.id.button2);
 		button2.setOnClickListener(new ButtonClickListener());
 	      
         radiogroup=(RadioGroup)findViewById(R.id.radioGroup);  
         radio1=(RadioButton)findViewById(R.id.radioButton1);  
         radio2=(RadioButton)findViewById(R.id.radioButton2);  
-        radio3=(RadioButton)findViewById(R.id.radioButton3); */
+        radio3=(RadioButton)findViewById(R.id.radioButton3); 
         
-/*        radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 			
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) 
@@ -67,16 +66,17 @@ public class question08 extends Activity {
 					Toast.makeText(getApplicationContext(), R.string.select, Toast.LENGTH_LONG).show();
 				}
 			}
-		});*/
+		});
 	}
 	
-	public void openMainActivity (View v){
+	public void openActivity04 (View v){
 		Intent intent = new Intent();
-		intent.setClass(this, MainActivity.class);//设置要激活的组件
+		intent.setClass(this, question04.class);//设置要激活的组件
 		startActivity(intent);
 	}
 	
-/*	private class ButtonClickListener implements View.OnClickListener
+	
+	private class ButtonClickListener implements View.OnClickListener
 	{
 		public void onClick(View v) 
 		{
@@ -94,7 +94,7 @@ public class question08 extends Activity {
 			}
 			
 		}
-	}*/
+	}
 
 }
 

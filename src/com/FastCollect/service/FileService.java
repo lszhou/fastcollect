@@ -1,4 +1,4 @@
-package com.example.service;
+package com.FastCollect.service;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,27 +17,6 @@ public class FileService {
 		this.context = context;
 	}
 	
-/*	public void saveToSDCard(String filename, String content) throws Exception
-	{
-		File file = new File(new File("/mnt/sdcard"),filename);
-		FileOutputStream outputStream = new FileOutputStream(file);
-		outputStream.write(content.getBytes());
-		outputStream.close();
-	}*/
-
-	/*
-	 * save data to local file.
-	 */
-	/*public void save(String filename, String content) throws Exception
-	{
-		// java IO
-		//Private MODE, the created file is only available to this application. The content will be overrided.
-		FileOutputStream outputStream = context.openFileOutput(filename, Context.MODE_APPEND);
-		outputStream.write(filename.getBytes());
-		outputStream.close();
-		
-	}*/
-
 	public void saveChiToSDCard(String chi) throws Exception
 	{
 		File externalStorageDir = Environment.getExternalStorageDirectory();

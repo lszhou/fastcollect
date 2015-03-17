@@ -1,9 +1,9 @@
-package com.example.surveyapp;
+package com.FastCollect.surveyapp;
 
 import java.text.SimpleDateFormat;
 
-import com.example.service.FileService;
-import com.example.surveyapp.MainActivity.ButtonClickListener;
+import com.FastCollect.service.FileService;
+import com.FastCollect.surveyapp.MainActivity.ButtonClickListener;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class question02 extends Activity {
+public class question04 extends Activity {
 	
 	TextView textview;
 	RadioGroup radiogroup;
@@ -31,7 +31,7 @@ public class question02 extends Activity {
 	protected void onCreate (Bundle savedInstanceState){
 		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity02);
+		setContentView(R.layout.activity04);
 		Button button2 = (Button) this.findViewById(R.id.button2);
 		button2.setOnClickListener(new ButtonClickListener());
 	      
@@ -69,9 +69,9 @@ public class question02 extends Activity {
 		});
 	}
 	
-	public void openActivity03 (View v){
+	public void openActivity08 (View v){
 		Intent intent = new Intent();
-		intent.setClass(this, question03.class);//设置要激活的组件
+		intent.setClass(this, question08.class);//设置要激活的组件
 		startActivity(intent);
 	}
 	

@@ -1,11 +1,12 @@
 /*SAVE button
  *NEXT button
  */
-package com.example.surveyapp;
+package com.FastCollect.surveyapp;
 
 import java.text.SimpleDateFormat;
 
-import com.example.service.FileService;
+import com.FastCollect.service.FileService;
+
 
 
 

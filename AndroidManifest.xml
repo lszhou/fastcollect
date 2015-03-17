@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.FastCollect.surveyapp.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".question01" android:label="@string/title"/>
-		<activity android:name=".question02" android:label="@string/title"/>
-		<activity android:name=".question03" android:label="@string/title"/>
-		<activity android:name=".question04" android:label="@string/title"/>
-		<activity android:name=".question08" android:label="@string/title"/>
+        <activity android:name="com.FastCollect.surveyapp.question01" android:label="@string/title"/>
+		<activity android:name="com.FastCollect.surveyapp.question02" android:label="@string/title"/>
+		<activity android:name="com.FastCollect.surveyapp.question03" android:label="@string/title"/>
+		<activity android:name="com.FastCollect.surveyapp.question04" android:label="@string/title"/>
+		<activity android:name="com.FastCollect.surveyapp.question08" android:label="@string/title"/>
     </application>
     
 
