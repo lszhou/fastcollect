@@ -1,6 +1,5 @@
-/*
- *设置save按钮
- *设置Next按钮
+/*SAVE button
+ *NEXT button
  */
 package com.example.surveyapp;
 
